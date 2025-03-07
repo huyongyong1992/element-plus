@@ -245,6 +245,10 @@ export const SelectProps = buildProps({
     type: [String, Number],
     default: 0,
   },
+  customEnter: {
+    type: Boolean,
+    default: false,
+  }
   /**
    * @description which element the selection dropdown appends to
    */
