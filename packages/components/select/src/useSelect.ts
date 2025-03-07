@@ -764,10 +764,14 @@ export const useSelect: useSelectType = (props: ISelectProps, emit) => {
   }
 
   const selectOption = () => {
+    const option = optionsArray.value[states.hoveringIndex]
+    if(props.customEnter) {
+      emit('enter', option)
+      return
+    }
     if (!expanded.value) {
       toggleMenu()
     } else {
-      const option = optionsArray.value[states.hoveringIndex]
       if (option && !option.isDisabled) {
         handleOptionSelect(option)
       }
