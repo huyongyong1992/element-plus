@@ -234,6 +234,7 @@ select/custom-label
 | value-on-clear ^(2.7.0)         | clear return value, [see config-provider](/en-US/component/config-provider#empty-values-configurations)               | ^[string] / ^[number] / ^[boolean] / ^[Function]                                                                                                                            | —                                              |
 | suffix-transition ^(deprecated) | animation when dropdown appears/disappears icon                                                                       | ^[boolean]                                                                                                                                                                  | true                                           |
 | tabindex ^(2.9.0)               | tabindex for input                                                                                                    | ^[string] / ^[number]                                                                                                                                                       | —                                              |
+| customEnter                     | when custom enter event                                                                                              | ^[boolean]                                                                                                                                                                  | false                                                |
 
 :::warning
 
@@ -252,7 +253,7 @@ select/custom-label
 | blur                  | triggers when Input blurs                                     | ^[Function]`(event: FocusEvent) => void`                            |
 | focus                 | triggers when Input focuses                                   | ^[Function]`(event: FocusEvent) => void`                            |
 | popup-scroll ^(2.9.4) | triggers when dropdown scrolls                                | ^[Function]`(data:{scrollTop: number, scrollLeft: number}) => void` |
-
+| enter                 | custom your enter event                                       | ^[Function]`(data: Object) => void`                                 |
 ### Select Slots
 
 | Name             | Description                           | Subtags               |
