@@ -342,6 +342,7 @@ export default defineComponent({
     'focus',
     'blur',
     'popup-scroll',
+    'enter'
   ],
 
   setup(props, { emit }) {
